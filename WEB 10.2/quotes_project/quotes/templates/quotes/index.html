@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes Index</title>
+</head>
+<body>
+    <h1>Quotes Index Page</h1>
+    {% for quote in quotes %}
+        <div>
+            <p>{{ quote.text }}</p>
+            <p>- {{ quote.author }}</p>
+        </div>
+    {% endfor %}
+</body>
+</html>
